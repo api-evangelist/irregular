@@ -1,8 +1,25 @@
 aid: irregular
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/irregular.png
 name: Irregular
-description: 'Irregular is a company surfaced as a portfolio company of redpoint-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Irregular (formerly Pattern Labs) is a frontier AI security lab founded in 2023 by Dan Lahav
+  and Eli David with the mission of protecting the world as AI systems become increasingly capable and
+  sophisticated. The company runs security assessments and red-team evaluations against advanced frontier
+  AI models, works to set security standards for the frontier AI industry, and is trusted by major AI labs
+  to evaluate model risk. Irregular raised $80M co-led by Sequoia Capital and Redpoint Ventures at a $450M
+  valuation. This API Evangelist profile was surfaced as a Redpoint Ventures portfolio company; Irregular
+  publishes no public API, SDK, or developer portal at this time, so this record captures company identity
+  and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/irregular/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
+- AI Security
+- Frontier AI
+- AI Safety
+- Security Research
+- Model Risk Evaluation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/irregular-domain-security.yml
 - type: Website
   url: https://www.irregular.com/
+- type: Blog
+  url: https://www.irregular.com/news
+- type: PrivacyPolicy
+  url: https://www.irregular.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
